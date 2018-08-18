@@ -83,6 +83,7 @@ body {
   background: linear-gradient(#a1c3c7, #2171ab);
   font-family: "Luckiest Guy", cursive;
   line-height: 2.5;
+  letter-spacing: 2px;
   color: #d5d417;
   text-shadow: 0 0 6px black;
 }

@@ -51,17 +51,18 @@
 }
 
 .card_name {
-	position   : absolute;
-	bottom     : -11px;
-	left       : 50%;
-	transform  : translate(-50%, 0);
-	height     : 30px;
-	width      : 190px;
-	background : linear-gradient(#a1c3c7,#2171ab);
-	font-family: $title__name;
-	line-height: 2.5;
-	color      : #d5d417;
-	text-shadow: 0 0 6px rgb(0, 0, 0);
+	position      : absolute;
+	bottom        : -11px;
+	left          : 50%;
+	transform     : translate(-50%, 0);
+	height        : 30px;
+	width         : 190px;
+	background    : linear-gradient(#a1c3c7,#2171ab);
+	font-family   : $title__name;
+	line-height   : 2.5;
+	letter-spacing: 2px;
+	color         : #d5d417;
+	text-shadow   : 0 0 6px rgb(0, 0, 0);
 }
 
 .card--front {
