@@ -46,5 +46,29 @@
 	"name": "Bullseye",
 		"pair": "4",
 		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/bullseye_b.png"
+	},
+	{
+	"id": 109,
+	"name": "Mr.Potato",
+		"pair": "5",
+		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mr-potato_a.png"
+	},
+	{
+	"id": 110,
+	"name": "Mr. Potato",
+		"pair": "5",
+		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mr-potato_b.png"
+	},
+	{
+	"id": 111,
+	"name": "Mrs. Potato",
+		"pair": "6",
+		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mr-potato_a.png"
+	},
+	{
+	"id": 112,
+	"name": "Mrs. Potato",
+		"pair": "6",
+		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mr-potato_b.png"
 	}
 ]

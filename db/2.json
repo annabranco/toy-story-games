@@ -22,29 +22,5 @@
 	"name": "Jessie",
     "pair": "2",
     "image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/jessie_b.png"
-  },
-	{
-	"id": 105,
-	"name": "Buzz",
-		"pair": "3",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/buzz_a.png"
-	},
-	{
-	"id": 106,
-	"name": "Buzz",
-		"pair": "3",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/buzz_b.png"
-	},
-	{
-	"id": 107,
-	"name": "Bullseye",
-		"pair": "4",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/bullseye_a.png"
-	},
-	{
-	"id": 108,
-	"name": "Bullseye",
-		"pair": "4",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/bullseye_b.png"
-	}
+  }
 ]

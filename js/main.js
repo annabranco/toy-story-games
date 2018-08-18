@@ -5,7 +5,7 @@
 var inputs = document.querySelectorAll('.input_card');
 var comenzar = document.querySelector('.boton');
 var resultado;
-var trasera = 'https://via.placeholder.com/160x195/30d9c4/ffffff/?text=ADALAB';
+var trasera = 'https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/cardback.png';
 var section = document.querySelector('.card__seccion');
 var contando = document.querySelector('.counter');
 var cont = 0;
@@ -43,7 +43,7 @@ function empezar() {
   section.classList.remove('grid');
 
   fetch(
-    'https://raw.githubusercontent.com/Adalab/cards-data/master/' +
+    'https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/db/' +
       resultado +
       '.json'
   )
@@ -114,4 +114,3 @@ function showCard(event) {
   contando.innerHTML = cont;
 
 }
-
