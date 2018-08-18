@@ -73,8 +73,11 @@ function empezar() {
 
         if (resultado === '10') {
           section.classList.add('grid10');
+        } else {
+          section.classList.remove('grid10');
         }
-        //añado los elementos al section
+
+//añado los elementos al section
 
         contenedor.appendChild(imagen);
         contenedor.appendChild(imagen2);
@@ -93,14 +96,13 @@ function mostarCarta() {
 
   for (var i = 0; i < mostrarcarta.length; i++) {
     mostrarcarta[i].addEventListener('click', showCard);
-
   }
 }
 
 //oculta la tarjeta clicada y muestra la otra
 
 function showCard(event) {
-    event.currentTarget.classList.toggle('card__turn');
+  event.currentTarget.classList.toggle('card__turn');
 
   cont = cont+1;
   contando.innerHTML = cont;

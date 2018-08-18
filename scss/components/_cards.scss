@@ -1,26 +1,12 @@
 .card__seccion {
 	display              : grid;
-	grid-template-columns: 170px 170px;
-	grid-gap             : 2px;
+	grid-template-columns: repeat(2, 200px);
+	grid-gap             : 5px;
 	justify-content      : center;
-	align-items          : center;
 	margin-top           : 30px;
 
-	@media all and (min-width: 768px) {
+	@media all and (min-width: 850px) {
 		grid-template-columns: repeat(4, 200px);
-		grid-gap             : 10px;
-	}
-}
-
-.grid10 {
-	display              : grid;
-	grid-template-columns: 170px 170px;
-	grid-gap             : 2px;
-	justify-content      : center;
-	align-items          : center;
-
-	@media all and (min-width: 768px) {
-		grid-template-columns: repeat(5, 200px);
 		grid-gap             : 10px;
 	}
 }

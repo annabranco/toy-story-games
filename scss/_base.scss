@@ -7,6 +7,17 @@ body {
 	margin-bottom: 30px;
 }
 
+.header__logo {
+	margin   : -70px;
+	max-width: 280px;
+
+	@media all and (min-width: 500px) {
+		margin: -20px;
+		width : 160px;
+	}
+
+}
+
 .boton {
 	background   : none;
 	border-color : aqua;
