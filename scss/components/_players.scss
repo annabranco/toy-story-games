@@ -1,0 +1,163 @@
+.player_outer {
+	z-index         : 2;
+	position        : fixed;
+	top             : 0;
+	left            : -52px;
+	border          : 1px solid;
+	border-radius   : 20px;
+	background-image: linear-gradient(#2171ab,#a1c3c7);
+	height          : 42px;
+	width           : 110px;
+	overflow        : hidden;
+	cursor          : pointer;
+	box-shadow      : 5px 5px 10px rgba(89, 89, 89, 0.4);
+	transition      : width 0.2s ease;
+
+	&:hover {
+		width     : 400px;
+		transition: width 0.4s ease;
+
+	}
+}
+
+.player_outer-fixed {
+	height: auto;
+	width : 400px;
+}
+
+.player_inner {
+	display        : flex;
+	align-items    : center;
+	justify-content: flex-start;
+	margin-left    : 50px;
+	height         : auto;
+	padding        : 0 10px;
+
+	.player_outer-fixed & {
+		height: 50px;
+	}
+
+}
+
+.player_avatar {
+	width: 40px;
+}
+
+.player_name {
+	margin        : 10px 40px;
+	color         : #d5d417;
+	text-shadow   : 0 0 5px rgb(0, 0, 0);
+	letter-spacing: 2px;
+}
+
+.player_buttons {
+	margin : 0 5px;
+	display: none;
+
+	.player_outer:hover & {
+		display: inline;
+	}
+}
+
+.players {
+	display        : flex;
+	align-items    : center;
+	justify-content: space-between;
+	width          : 100%;
+}
+
+.player_remove-icon {
+	margin     : 0 10px 0 100px;
+	color      : white;
+	text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.player_inner-new {
+	margin-top      : 10px;
+	border-top      : 1px solid;
+	background-image: linear-gradient(#dedede,#f4f4f4);
+
+	&.first-game {
+		margin-top               : 0;
+		animation-name           : blink;
+		animation-duration       : 2s;
+		animation-iteration-count: infinite;
+
+	}
+	@keyframes blink {
+		0% {}
+
+		20% {
+			background-image: none;
+			background      : rgb(230, 223, 142);
+		}
+	}
+
+}
+
+.player_new-icon {
+	margin-left: 10px;
+	font-size  : 1.2rem;
+	text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.player_new {
+	margin        : 10px 40px;
+	font-size     : 0.8rem;
+	letter-spacing: 2px;
+	font-weight   : bold;
+}
+
+.player_records-outer {
+	display        : flex;
+	align-items    : center;
+	justify-content: center;
+}
+
+.player_inner-records {
+	& .player_avatar {
+		margin-top: 20px;
+		width     : 60px;
+	}
+
+	& .player_name {
+		margin-top: 30px;
+		font-size : 2rem;
+	}
+}
+
+.player_records-inner {
+	margin               : 30px 0 20px 60px;
+	display              : grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-template-rows   : 70px 70px;
+	grid-gap             : 5px;
+}
+
+.player_records {
+	border       : 1px solid;
+	border-radius: 5px;
+	background   : rgb(209, 209, 226);
+}
+
+.record-num {
+	margin-top: 5px;
+}
+
+.record-trials {
+	margin-top : -10px;
+	font-family: $title__name;
+	font-size  : 2rem;
+}
+
+.record-total {
+	margin-top: 20px;
+	font-size : 0.7rem;
+
+}
+
+.record-trials-total {
+	margin-top : -5px;
+	font-size  : 0.9rem;
+	font-weight: bold;
+}

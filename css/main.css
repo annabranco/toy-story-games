@@ -49,16 +49,34 @@ body {
   margin: 10px;
 }
 
+.card--back {
+  border: 5px solid #9c8c3a;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a1c3c7), to(#2171ab)) !important;
+  background-image: linear-gradient(#a1c3c7, #2171ab) !important;
+}
+
 .card__image {
   height: 300px;
   width: 200px;
   border: 5px solid #2171ab;
-  cursor: pointer;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
+  cursor: default;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d7d7d), to(#ffffff));
+  background-image: linear-gradient(#7d7d7d, #ffffff);
+  -webkit-filter: grayscale(90%) opacity(50%);
+  filter: grayscale(90%) opacity(50%);
+}
+
+.card__not-matched .card__image {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#d7dbdb));
   background-image: linear-gradient(#f2f2f2, #d7dbdb);
+  cursor: pointer;
 }
 
 .card_name {
@@ -69,25 +87,221 @@ body {
   transform: translate(-50%, 0);
   height: 30px;
   width: 190px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a1c3c7), to(#2171ab));
-  background: linear-gradient(#a1c3c7, #2171ab);
   font-family: "Luckiest Guy", cursive;
   line-height: 2.5;
   letter-spacing: 2px;
   color: #d5d417;
   text-shadow: 0 0 6px black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a1c3c7), to(#2171ab));
+  background: linear-gradient(#a1c3c7, #2171ab);
+  -webkit-filter: grayscale(90%) opacity(50%);
+  filter: grayscale(90%) opacity(50%);
+}
+
+.card__not-matched .card_name {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .card--front {
   display: none;
 }
 
-.card--back {
-  border: 5px solid #9c8c3a;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a1c3c7), to(#2171ab));
-  background-image: linear-gradient(#a1c3c7, #2171ab);
+.textNotMatch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+  height: 40px;
+  width: 190px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(188, 161, 199, 0.7)), to(rgba(75, 42, 105, 0.7)));
+  background: linear-gradient(rgba(188, 161, 199, 0.7), rgba(75, 42, 105, 0.7));
+  line-height: 2.5;
+  letter-spacing: 2px;
+  color: #cdcdcd;
+  text-shadow: 0 0 10px black;
+}
+
+.player_outer {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: -52px;
+  border: 1px solid;
+  border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2171ab), to(#a1c3c7));
+  background-image: linear-gradient(#2171ab, #a1c3c7);
+  height: 42px;
+  width: 110px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 10px rgba(89, 89, 89, 0.4);
+  box-shadow: 5px 5px 10px rgba(89, 89, 89, 0.4);
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+.player_outer:hover {
+  width: 400px;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+
+.player_outer-fixed {
+  height: auto;
+  width: 400px;
+}
+
+.player_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 50px;
+  height: auto;
+  padding: 0 10px;
+}
+
+.player_outer-fixed .player_inner {
+  height: 50px;
+}
+
+.player_avatar {
+  width: 40px;
+}
+
+.player_name {
+  margin: 10px 40px;
+  color: #d5d417;
+  text-shadow: 0 0 5px black;
+  letter-spacing: 2px;
+}
+
+.player_buttons {
+  margin: 0 5px;
+  display: none;
+}
+
+.player_outer:hover .player_buttons {
+  display: inline;
+}
+
+.players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.player_remove-icon {
+  margin: 0 10px 0 100px;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.player_inner-new {
+  margin-top: 10px;
+  border-top: 1px solid;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#f4f4f4));
+  background-image: linear-gradient(#dedede, #f4f4f4);
+}
+
+.player_inner-new.first-game {
+  margin-top: 0;
+  -webkit-animation-name: blink;
+  animation-name: blink;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.player_new-icon {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px white;
+}
+
+.player_new {
+  margin: 10px 40px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.player_records-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.player_inner-records .player_avatar {
+  margin-top: 20px;
+  width: 60px;
+}
+
+.player_inner-records .player_name {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.player_records-inner {
+  margin: 30px 0 20px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: 70px 70px;
+  grid-gap: 5px;
+}
+
+.player_records {
+  border: 1px solid;
+  border-radius: 5px;
+  background: #d1d1e2;
+}
+
+.record-num {
+  margin-top: 5px;
+}
+
+.record-trials {
+  margin-top: -10px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+}
+
+.record-total {
+  margin-top: 20px;
+  font-size: 0.7rem;
+}
+
+.record-trials-total {
+  margin-top: -5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .card__turn .card--back {
@@ -133,6 +347,26 @@ body {
   .grid10 {
     grid-template-columns: repeat(5, 200px);
     grid-gap: 10px;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+  }
+
+  20% {
+    background-image: none;
+    background: #e6df8e;
+  }
+}
+
+@keyframes blink {
+  0% {
+  }
+
+  20% {
+    background-image: none;
+    background: #e6df8e;
   }
 }
 

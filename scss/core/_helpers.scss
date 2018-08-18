@@ -1,3 +1,7 @@
+.hidden {
+	display: none !important;
+}
+
 .card__turn {
 	& .card--back {
 		display: none;

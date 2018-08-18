@@ -110,13 +110,13 @@
 	{
 		"id": 119,
 		"name": "Slinky Dog",
-		"pair": "10",
+		"pair": "0",
 		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/dog_a.png"
 	},
 	{
 		"id": 120,
 		"name": "Slinky Dog",
-		"pair": "10",
+		"pair": "0",
 		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/dog_b.png"
 	}
 ]

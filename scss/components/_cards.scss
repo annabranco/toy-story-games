@@ -21,14 +21,27 @@
 	margin         : 10px;
 }
 
+.card--back {
+	border          : 5px solid #9c8c3a;
+	box-sizing      : border-box;
+	background-image: linear-gradient(#a1c3c7,#2171ab) !important;
+}
+
 .card__image {
 	height          : 300px;
 	width           : 200px;
 	border          : 5px solid #2171ab;
-	cursor          : pointer;
 	box-sizing      : border-box;
 	border-radius   : 10px;
-	background-image: linear-gradient(#f2f2f2,#d7dbdb);
+	cursor          : default;
+	background-image: linear-gradient(#7d7d7d,#ffffff);
+	filter:grayscale(90%) opacity(50%);
+
+	.card__not-matched & {
+		filter:grayscale(0%);
+		background-image: linear-gradient(#f2f2f2,#d7dbdb);
+		cursor          : pointer;
+	}
 
 	@media all and (min-width: 400px) {
 		height: 300px;
@@ -43,20 +56,35 @@
 	transform     : translate(-50%, 0);
 	height        : 30px;
 	width         : 190px;
-	background    : linear-gradient(#a1c3c7,#2171ab);
 	font-family   : $title__name;
 	line-height   : 2.5;
 	letter-spacing: 2px;
 	color         : #d5d417;
 	text-shadow   : 0 0 6px rgb(0, 0, 0);
+	background    : linear-gradient(#a1c3c7,#2171ab);
+	filter:grayscale(90%) opacity(50%);
+
+	.card__not-matched & {
+		filter:grayscale(0%);
+	}
 }
 
 .card--front {
 	display: none;
 }
 
-.card--back {
-	border          : 5px solid #9c8c3a;
-	box-sizing      : border-box;
-	background-image: linear-gradient(#a1c3c7,#2171ab);
+.textNotMatch {
+	position      : absolute;
+	top           : 0;
+	left          : 50%;
+	transform     : translate(-50%, -40%);
+	height        : 40px;
+	width         : 190px;
+	font-family   : $title__name;
+	font-size     : 1.3rem;
+	background    : linear-gradient(rgba(188, 161, 199, 0.7),rgba(75, 42, 105, 0.7));
+	line-height   : 2.5;
+	letter-spacing: 2px;
+	color         : #cdcdcd;
+	text-shadow   : 0 0 10px rgb(0, 0, 0);
 }

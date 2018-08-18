@@ -5,7 +5,9 @@
 	},
 	"js": {
 		"src": [
-			"js/main.js"
+			"js/main.js",
+			"js/cardGameSet.js",
+			"js/cardGame.js"
 		],
 		"dest": "js/"
 	},
