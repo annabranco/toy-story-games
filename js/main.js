@@ -71,8 +71,8 @@ function empezar() {
 
         //mejoro la visualizacion con 6 cartas
 
-        if (resultado === '6') {
-          section.classList.add('grid');
+        if (resultado === '10') {
+          section.classList.add('grid10');
         }
         //añado los elementos al section
 

@@ -28,7 +28,7 @@ body {
   margin-top: 30px;
 }
 
-.grid {
+.grid10 {
   display: grid;
   grid-template-columns: 170px 170px;
   grid-gap: 2px;
@@ -121,8 +121,8 @@ body {
     grid-gap: 10px;
   }
 
-  .grid {
-    grid-template-columns: 170px 170px 170px;
+  .grid10 {
+    grid-template-columns: repeat(5, 200px);
     grid-gap: 10px;
   }
 }
