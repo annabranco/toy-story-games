@@ -63,12 +63,12 @@
 	"id": 111,
 	"name": "Mrs. Potato",
 		"pair": "6",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mr-potato_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mrs-potato_a.png"
 	},
 	{
 	"id": 112,
 	"name": "Mrs. Potato",
 		"pair": "6",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mr-potato_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mrs-potato_b.png"
 	}
 ]
