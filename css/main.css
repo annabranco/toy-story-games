@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
 .titulo {
   margin-bottom: 30px;
+}
+
+.boton {
+  background: none;
+  border-color: aqua;
+  border-radius: 5px;
 }
 
 .card__seccion {
@@ -27,43 +40,83 @@
   align-items: center;
 }
 
-.poke__div {
+.card__div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 300px;
   margin: 10px;
 }
 
-.poke__image {
-  height: 175px;
-  width: 140px;
-  border: 1px solid;
+.card__image {
+  height: 300px;
+  width: 200px;
+  border: 5px solid #2171ab;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#d7dbdb));
+  background-image: linear-gradient(#f2f2f2, #d7dbdb);
 }
 
-body {
-  text-align: center;
-  font-family: sans-serif;
+.card_name {
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  height: 30px;
+  width: 190px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a1c3c7), to(#2171ab));
+  background: linear-gradient(#a1c3c7, #2171ab);
+  font-family: "Luckiest Guy", cursive;
+  line-height: 2.5;
+  color: #d5d417;
+  text-shadow: 0 0 6px black;
 }
 
-.boton {
-  background: none;
-  border-color: aqua;
-  border-radius: 5px;
-}
-
-.poke__hidden {
+.card--front {
   display: none;
 }
 
+.card--back {
+  border: 5px solid #9c8c3a;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a1c3c7), to(#2171ab));
+  background-image: linear-gradient(#a1c3c7, #2171ab);
+}
+
+.card__turn .card--back {
+  display: none;
+}
+
+.card__turn .card--front {
+  display: block;
+}
+
 @media all and (min-width: 400px) {
-  .poke__image {
-    height: 195px;
-    width: 160px;
+  .card__image {
+    height: 300px;
+    width: 200px;
   }
 }
 
 @media all and (min-width: 768px) {
   .card__seccion {
-    grid-template-columns: 170px 170px 170px 170px;
+    grid-template-columns: repeat(4, 200px);
     grid-gap: 10px;
   }
 

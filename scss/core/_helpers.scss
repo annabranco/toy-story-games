@@ -1,0 +1,10 @@
+.card__turn {
+	& .card--back {
+		display: none;
+	}
+
+	& .card--front {
+		display: block;
+	}
+
+}

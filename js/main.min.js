@@ -57,13 +57,14 @@ function empezar() {
 
       for (var i = 0; i < respuesta2.length; i++) {
         const contenedor = document.createElement('div');
-        contenedor.classList.add('poke__div');
+        contenedor.classList.add('card__div');
         const imagen = document.createElement('img');
-        imagen.classList.add('poke__image');
+        imagen.classList.add('card__image','card--back');
         const imagen2 = document.createElement('img');
-        imagen2.classList.add('poke__image', 'poke__hidden');
+        imagen2.classList.add('card__image', 'card--front');
         const parrafo = document.createElement('p');
-        parrafo.innerHTML=respuesta2[i].pair;
+        parrafo.classList.add('card_name', 'card--front');
+        parrafo.innerHTML=respuesta2[i].name;
 
         imagen.src = trasera;
         imagen2.src = respuesta2[i].image;
@@ -88,7 +89,7 @@ function empezar() {
 //event listener a las imagenes
 
 function mostarCarta() {
-  var mostrarcarta = document.querySelectorAll('.poke__image');
+  var mostrarcarta = document.querySelectorAll('.card__div');
 
   for (var i = 0; i < mostrarcarta.length; i++) {
     mostrarcarta[i].addEventListener('click', showCard);
@@ -99,17 +100,8 @@ function mostarCarta() {
 //oculta la tarjeta clicada y muestra la otra
 
 function showCard(event) {
-  if (event.currentTarget.src === trasera) {
-    event.currentTarget.classList.add('poke__hidden');
-    event.currentTarget.parentElement.children[1].classList.remove(
-      'poke__hidden'
-    );
-  } else {
-    event.currentTarget.classList.add('poke__hidden');
-    event.currentTarget.parentElement.children[0].classList.remove(
-      'poke__hidden'
-    );
-  }
+    event.currentTarget.classList.toggle('card__turn');
+
   cont = cont+1;
   contando.innerHTML = cont;
 
