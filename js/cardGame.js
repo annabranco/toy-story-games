@@ -8,8 +8,11 @@ let cont = 0;
 let compareA;
 let compareB;
 
+
+const Click = new Audio('http://freesound.org/data/previews/215/215772_4027196-lq.mp3');
+const Ding = new Audio('http://freesound.org/data/previews/411/411088_5121236-lq.mp3');
 const Yes = new Audio('http://freesound.org/data/previews/19/19260_84709-lq.mp3');
-const No = new Audio('http://freesound.org/data/previews/273/273919_3173139-lq.mp3')
+const No = new Audio('http://freesound.org/data/previews/273/273919_3173139-lq.mp3');
 const Victory = new Audio('http://freesound.org/data/previews/426/426233_321967-lq.mp3');
 
 contando.innerHTML = cont;
@@ -23,12 +26,12 @@ function showCard(event) {
 	event.currentTarget.removeEventListener('click', showCard);
 
 	if (compareA === undefined) {
+		Ding.volume = 0.3;
+		Ding.currentTime = 0;
+		Ding.play();
 		compareA = event.currentTarget.getAttribute('data-pair');
-		console.log(compareA);
 	} else {
 		compareB = event.currentTarget.getAttribute('data-pair');
-		console.log(compareB);
-
 		compareCards();
 	}
 }
@@ -62,11 +65,12 @@ function compareCards() {
 					card.classList.remove('card__turn');
 					card.addEventListener('click', showCard);
 					card.lastChild.classList.add('hidden');
+					nextTrial();
 				},3200);
 			}
 		}
 	}
-	nextTrial();
+
 }
 
 function nextTrial() {
@@ -80,8 +84,9 @@ function nextTrial() {
 function checkForVictory() {
 	if (notMatchedCards.length === 0) {
 		theEnd();
+	} else {
+		nextTrial();
 	}
-
 }
 
 function theEnd() {

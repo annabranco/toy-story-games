@@ -21,7 +21,7 @@
 
 			<section class="player">
 
-				<div class="player_outer hidden">
+				<div class="player_outer player_mainBar hidden">
 					<div class="player_inner">
 						<img src="images/avatar/av_jessie.png" alt="Avatar" class="player_avatar">
 						<h3 class="player_name">Anna</h3>
@@ -31,22 +31,48 @@
 
 				</div>
 
-				<div class="player_outer player_outer-fixed player_outer-edit">
+				<div class="player_outer player_outer-fixed player_outer-edit hidden">
 					<div class="player_inner player_current hidden">
-						<div class="players">
+						<div class="players current-player">
 							<img src="images/avatar/av_jessie.png" alt="Avatar" class="player_avatar">
 							<h3 class="player_name">Anna</h3>
 							<i class="fas fa-user-minus player_remove-icon"></i>
 						</div>
+
+					</div>
+					<div class="other-players">
 					</div>
 					<div class="player_inner player_inner-new first-game">
 						<i class="fas fa-user-plus player_new-icon"></i>
 						<p class="player_new">Crear nuevo/a jugador/a</p>
-
+					</div>
+					<div class="player_inner player_createNew hidden">
+						<div class="player_createNew-box">
+							<label for="newName" class="layer_createNew-nameLabel">¿Cómo quieres ser llamada/o?</label>
+							<input type="text" id="newName" class="player_createNew-name" placeholder="Ej. Andy">
+						</div>
+						<div class="player_createNew-box">
+							<p class="layer_createNew-nameLabel">Selecciona tu avatar:</p>
+							<div class="player_createNew-avatarBox">
+								<img src="images/avatar/av_woody.png" alt="Avatar Woody" class="avatar" id="av_woody">
+								<img src="images/avatar/av_jessie.png" alt="Avatar Jessie" class="avatar" id="av_jessie">
+								<img src="images/avatar/av_buzz.png" alt="Avatar Buzz" class="avatar" id="av_buzz">
+								<img src="images/avatar/av_barbie.png" alt="Avatar Barbie" class="avatar" id="av_barbie">
+								<img src="images/avatar/av_t-rex.png" alt="Avatar T-Rex" class="avatar" id="av_t-rex">
+								<img src="images/avatar/av_martian.png" alt="Avatar Martian" class="avatar" id="av_martian">
+								<img src="images/avatar/av_mr-potato.png" alt="Avatar Mr. Potato" class="avatar" id="av_mr-potato">
+								<img src="images/avatar/av_mrs-potato.png" alt="Avatar Mrs. Potato" class="avatar" id="av_mrs-potato">
+								<img src="images/avatar/av_horse.png" alt="Avatar Horse" class="avatar" id="av_horse">
+								<img src="images/avatar/av_dog.png" alt="Avatar Dog" class="avatar" id="av_dog">
+							</div>
+							<p class="player_createNew-confirmation hidden">Necesitas elegir un nombre y un avatar para continuar</p>
+							<button class="player_createNew-avatarButton">Confirmar</button>
+						</div>
 					</div>
 				</div>
 
-				<div class="player_outer player_outer-fixed hidden">
+
+				<div class="player_outer player_outer-fixed player_outer-details hidden">
 					<div class="player_inner player_inner-records">
 						<img src="images/avatar/av_jessie.png" alt="Avatar" class="player_avatar">
 						<h3 class="player_name">Anna</h3>
