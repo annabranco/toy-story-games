@@ -1,8 +1,9 @@
 # Toy Story Games
 <img src="https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/cardback.png" alt="Toy Story: Jueg de Cartas" width="30%">
 
-Functions and structure forked from [SandraCGarcia](https://github.com/SandraCGarcia/juego-de-cartas-adalab).
+Basic functions and structure forked from [SandraCGarcia](https://github.com/SandraCGarcia/juego-de-cartas-adalab).
 Inspired by [@Adalab](https://github.com/Adalab).
+I have then developed the Toy Story theme, player identification and advanced game mechanics.
 
 ### Disclaimer:
 All *Toy Story* logos, images and associated names are copyrighted material owned by **Disney** and **Pixar** studios.
