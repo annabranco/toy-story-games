@@ -1,11 +1,11 @@
-/* global showCard Click */
+/* global showCard Click cont:true */
 
 'use strict';
 
 //declaracion de variables globales
 
 const inputs = document.querySelectorAll('.input_card');
-const comenzar = document.querySelector('.boton');
+const comenzar = document.querySelector('.start_button');
 let resultado;
 const trasera = 'https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/cardback.png';
 const section = document.querySelector('.card__seccion');

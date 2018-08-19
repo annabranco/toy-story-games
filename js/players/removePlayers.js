@@ -15,7 +15,7 @@ function removePlayer(e) {
 	let clickedPlayerId = e.currentTarget.parentElement.id.substr(6);
 	clickedPlayerId = Number(clickedPlayerId);
 
-	for (const player of LSData) {{
+	for (const player of LSData) {
 		if ( player.id  === clickedPlayerId ) {
 			if( player.games.total === 0) {
 				delPlayer(player.id);
@@ -23,7 +23,7 @@ function removePlayer(e) {
 				confirmRemovePlayer(player);
 			}
 		}
-	}}
+	}
 }
 
 function confirmRemovePlayer(player) {

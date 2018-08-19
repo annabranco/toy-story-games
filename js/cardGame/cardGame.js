@@ -1,5 +1,5 @@
 /* exported showCard */
-/* global notMatchedCards:true */
+/* global notMatchedCards:true resultado LSData:true currentPlayer */
 
 'use strict';
 
@@ -37,7 +37,7 @@ function showCard(event) {
 }
 
 function compareCards() {
-	cont = cont+1;
+	cont++;
 	contando.innerHTML = cont;
 
 	notMatchedCards = document.querySelectorAll('.card__not-matched');
@@ -70,7 +70,6 @@ function compareCards() {
 			}
 		}
 	}
-
 }
 
 function nextTrial() {
@@ -90,7 +89,22 @@ function checkForVictory() {
 }
 
 function theEnd() {
+	const typeOfGame = `${resultado}char`;
+	const numberOfTrials = cont;
+	compareA = compareB = undefined;
+	cont = 0;
+	document.querySelector('.start_button').innerHTML = 'Nuevo partido';
+
+
 	setTimeout(() => {
 		Victory.play();
 	},1000);
+
+	for (const player of LSData) {
+		if(player.id === currentPlayer.id) {
+			player.games.total++;
+			player.games[typeOfGame] = numberOfTrials;
+		}
+	}
+	localStorage.setItem('AB Toy Story Games',JSON.stringify(LSData));
 }

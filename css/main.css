@@ -3,10 +3,20 @@
 body {
   text-align: center;
   font-family: sans-serif;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 255, 0.8)), to(rgba(255, 255, 0, 0.3))), -webkit-gradient(linear, left top, right bottom, from(rgba(70, 114, 161, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../images/wallpaper.jpg");
+  background-image: linear-gradient(to bottom left, rgba(0, 0, 255, 0.8), rgba(255, 255, 0, 0.3)), linear-gradient(to bottom right, rgba(70, 114, 161, 0.6), rgba(255, 255, 255, 0.6)), url("../images/wallpaper.jpg");
+  background-size: 180vw 100vh;
+  background-attachment: fixed;
+  background-position: left top;
 }
 
-.titulo {
+.header__title {
   margin-bottom: 30px;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 4px;
+  font-size: 2.4rem;
+  color: #b5a94d;
+  text-shadow: 0 0 5px black;
 }
 
 .header__logo {
