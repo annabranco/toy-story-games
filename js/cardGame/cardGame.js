@@ -94,7 +94,7 @@ function theEnd() {
 	compareA = compareB = undefined;
 	cont = 0;
 	document.querySelector('.start_button').innerHTML = 'Nuevo partido';
-
+	document.querySelector('.selection_outer').classList.remove('hidden');
 
 	setTimeout(() => {
 		Victory.play();

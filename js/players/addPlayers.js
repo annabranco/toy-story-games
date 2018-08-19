@@ -1,6 +1,6 @@
 'use strict';
 
-function createNewPlayer() {
+function createNewPlayer() { // Opens up the screen to create a new player
 	document.querySelector('.player_createNew').addEventListener('mouseleave',unmountCreateNewPlayer);
 	NewPlayer.currentTime = 0;
 	NewPlayer.play();
@@ -31,7 +31,7 @@ function selectAvatar(e) {
 	playerAvatar = e.currentTarget.id;
 }
 
-function addPlayer() {
+function addPlayer() { // Executes when the player creation button CONFIRMAR is clicked
 
 	Click.play();
 	let currentId = 0;
@@ -65,8 +65,12 @@ function addPlayer() {
 		localStorage.setItem('AB Toy Story Games', JSON.stringify(LSData));
 
 
+		if ( currentPlayer !== undefined ) {
+			document.querySelector('.player_outer-edit').classList.add('hidden');
+			document.querySelector('.selection_outer').classList.remove('hidden');
+		}
+
 		document.querySelector('.player_createNew').classList.add('hidden');
-		document.querySelector('.player_outer-edit').classList.add('hidden'); //test
 		document.querySelector('.player_current').classList.remove('hidden');
 		document.querySelector('.player_createNew-name').value = '';
 		const avatars = document.querySelectorAll('.avatar');
@@ -76,5 +80,7 @@ function addPlayer() {
 		setCurrentPlayer();
 		clearOtherPlayers();
 		printOtherPlayers();
+		document.querySelector('.player_mainBar').classList.remove('hidden');
+
 	}
 }

@@ -11,22 +11,24 @@
 	</head>
 
 	<body>
-		<header>
+
+		<header class="header">
 			<img class="header__logo" src="images/cardback.png" alt="Logo Toy Story: Juego de Cartas">
 			<h1 class="header__title">El juego de las parejas</h1>
 			<h2 class="counter hidden"></h2>
 		</header>
 
 		<main>
-
 			<section class="player">
 
 				<div class="player_outer player_mainBar hidden">
 					<div class="player_inner">
 						<img src="images/avatar/av_jessie.png" alt="Avatar" class="player_avatar">
 						<h3 class="player_name">Anna</h3>
-						<button class="player_buttons player_details">Detalles</button>
-						<button class="player_buttons player_change">Cambiar</button>
+						<i class="fas fa-info player_details"></i>
+						<i class="fas fa-exchange-alt player_change"></i>
+						<!-- <button class="player_buttons player_details">Detalles</button>
+						<button class="player_buttons player_change">Cambiar</button> -->
 					</div>
 
 				</div>
@@ -110,17 +112,17 @@
 			</section>
 
 			<div class="selection_outer">
-				<label for="characters__number">Número de Personajes</label>
+				<label for="characters__number">Número de Personajes:</label>
 				<form id="characters__number" action="" class="card__formulario">
-					<input type="radio" name="selecciona" class="input_card" value="2">
+					<input type="radio" name="selecciona" class="input_card--radios" value="2" checked>
 					<label for="selecciona">2</label>
-					<input type="radio" name="selecciona" class="input_card" value="4">
+					<input type="radio" name="selecciona" class="input_card--radios" value="4">
 					<label for="selecciona">4</label>
-					<input type="radio" name="selecciona" class="input_card" value="6">
+					<input type="radio" name="selecciona" class="input_card--radios" value="6">
 					<label for="selecciona">6</label>
-					<input type="radio" name="selecciona" class="input_card" value="8">
+					<input type="radio" name="selecciona" class="input_card--radios" value="8">
 					<label for="selecciona">8</label>
-					<input type="radio" name="selecciona" class="input_card" value="10">
+					<input type="radio" name="selecciona" class="input_card--radios" value="10">
 					<label for="selecciona">10</label>
 					<button type="button" class="start_button">Comenzar</button>
 				</form>

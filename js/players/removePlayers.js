@@ -98,8 +98,6 @@ function delPlayer(id) {
 			preGame();
 		}
 		setCurrentPlayer();
-		clearOtherPlayers();
-		printOtherPlayers();
 	}
 }
 
@@ -112,6 +110,7 @@ function forcedChangeCurrentPlayer(id, orderOfDeletedPlayer) {
 		currentPlayer = undefined;
 		document.querySelector('.player_current').classList.add('hidden');
 		document.querySelector('.player_inner-new').classList.add('first-game');
+		document.querySelector('.player_outer-edit').removeEventListener('mouseleave',unmountEditPlayers);
 	} else {
 		currentPlayer = playersLSData[0];
 		LSData[0].currentPlayer = currentPlayer.name;

@@ -4,9 +4,9 @@
 
 //declaracion de variables globales
 
-const inputs = document.querySelectorAll('.input_card');
+const inputs = document.querySelectorAll('.input_card--radios');
 const comenzar = document.querySelector('.start_button');
-let resultado;
+let resultado = 2;
 const trasera = 'https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/cardback.png';
 const section = document.querySelector('.card__seccion');
 let charactersResults = [];
@@ -182,6 +182,7 @@ function createElements() {
 	prepareCardsToBeClicked();
 	// resetea array de personajes reordenados, para prepararlo para otro partido
 	charactersShuffled = [];
+	document.querySelector('.selection_outer').classList.add('hidden');
 }
 
 //event listener a las imagenes

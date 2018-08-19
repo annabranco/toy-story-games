@@ -11,11 +11,11 @@ body {
 }
 
 .header__title {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   font-family: "Luckiest Guy", cursive;
   letter-spacing: 4px;
   font-size: 2.4rem;
-  color: #b5a94d;
+  color: #FED831;
   text-shadow: 0 0 5px black;
 }
 
@@ -24,10 +24,36 @@ body {
   max-width: 280px;
 }
 
-.boton {
+.selection_outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.input_card--radios {
+  vertical-align: middle;
+  margin: -5px 5px 0 30px;
+}
+
+.start_button {
+  margin-left: 50px;
   background: none;
   border-color: aqua;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0799a7), to(#8cf7fa));
+  background-image: linear-gradient(#0799a7, #8cf7fa);
   border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .card__seccion {
@@ -138,12 +164,12 @@ body {
 .player_outer {
   z-index: 2;
   position: fixed;
-  top: 0;
+  top: 5px;
   left: -52px;
-  border: 1px solid;
+  border: 1px solid #b7c329;
   border-radius: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2171ab), to(#a1c3c7));
-  background-image: linear-gradient(#2171ab, #a1c3c7);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FED831), to(rgba(83, 77, 49, 0.7)));
+  background-image: linear-gradient(#FED831, rgba(83, 77, 49, 0.7));
   height: 42px;
   width: 110px;
   overflow: hidden;
@@ -190,18 +216,26 @@ body {
 
 .otherPlayer_name,.player_name {
   margin: 10px 40px 10px 30px;
-  color: #d5d417;
-  text-shadow: 0 0 5px black;
+  color: #FED831;
+  border-radius: 20px;
+  width: 150%;
+  text-shadow: 0 0 10px black;
   letter-spacing: 2px;
+  text-align: left;
 }
 
-.player_buttons {
-  margin: 0 5px;
-  display: none;
+.player_change,.player_details {
+  margin: 0 10px;
+  height: 30px;
+  width: 110px;
+  font-size: 1.4rem;
+  color: black;
+  line-height: 1.3;
+  text-shadow: 0 0 3px white;
 }
 
-.player_outer:hover .player_buttons {
-  display: inline;
+.player_change:first-of-type,.player_details:first-of-type {
+  margin-left: 0;
 }
 
 .players {
@@ -240,7 +274,7 @@ body {
 }
 
 .other_players:hover {
-  background: #969342;
+  background: rgba(115, 204, 242, 0.57);
 }
 
 .player_remove-icon {
@@ -378,8 +412,39 @@ body {
 .player_createNew-name {
   margin: 10px 0 10px -30px;
   width: 80%;
+  padding-bottom: 10px;
   font-size: 2rem;
   text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #91a0af;
+}
+
+:-ms-input-placeholder {
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #91a0af;
+}
+
+::-ms-input-placeholder {
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #91a0af;
+}
+
+::placeholder {
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #91a0af;
 }
 
 .player_createNew-avatarBox {

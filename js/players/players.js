@@ -23,7 +23,7 @@ document.querySelector('.player_inner-new').addEventListener('click',createNewPl
 document.querySelector('.player_details').addEventListener('click',seePlayerDetails);
 document.querySelector('.player_change').addEventListener('click',changePlayer);
 
-function seePlayerDetails() {
+function seePlayerDetails() { // Opens up player details screen
 	Click.volume = 0.3;
 	Click.play();
 	document.querySelector('.player_outer-details').classList.remove('hidden');
@@ -51,6 +51,7 @@ function changePlayer() {
 	printOtherPlayers();
 
 	document.querySelector('.player_outer-edit').addEventListener('mouseleave',unmountEditPlayers);
+
 }
 
 function printOtherPlayers() {
