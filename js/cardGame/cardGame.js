@@ -92,5 +92,5 @@ function checkForVictory() {
 function theEnd() {
 	setTimeout(() => {
 		Victory.play();
-},1000)
+	},1000);
 }

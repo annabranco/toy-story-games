@@ -1,4 +1,4 @@
-/* global showCard  */
+/* global showCard Click */
 
 'use strict';
 
@@ -17,19 +17,22 @@ let LSData = [];
 const NewGame = new Audio('http://freesound.org/data/previews/105/105228_420640-lq.mp3');
 
 
+function onLoad() {
 
-window.addEventListener('keyup',(e) => {
-	if (e.key === '+') {
-		for (const player of LSData) {
-			if (LSData[0].currentId === player.id) {
+	preGame();
 
-				player.games.total++;
-				localStorage.setItem('AB Toy Story Games',JSON.stringify(LSData));
+	window.addEventListener('keyup',(e) => {
+		if (e.key === '+') {
+			for (const player of LSData) {
+				if (LSData[0].currentId === player.id) {
+
+					player.games.total++;
+					localStorage.setItem('AB Toy Story Games',JSON.stringify(LSData));
+				}
 			}
 		}
-	}
-});
-
+	});
+}
 
 function preGame() {
 	if (localStorage.getItem('AB Toy Story Games') !== null) {
@@ -51,9 +54,6 @@ function preGame() {
 		document.querySelector('.player_inner-new').classList.remove('hidden');
 		document.querySelector('.player_outer-edit').classList.remove('hidden');
 		document.querySelector('.selection_outer').classList.add('hidden');
-
-
-
 	}
 }
 
@@ -95,6 +95,8 @@ comenzar.addEventListener('click', empezar);
 //inicia el juego
 
 function empezar() {
+	Click.volume = 0.3;
+	Click.play();
 	//reset
 
 	NewGame.volume = 0.5;
@@ -192,4 +194,4 @@ function prepareCardsToBeClicked() {
 	}
 }
 
-preGame();
+onLoad();
