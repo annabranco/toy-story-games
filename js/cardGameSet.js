@@ -16,7 +16,6 @@ let currentPlayer;
 let LSData = [];
 const NewGame = new Audio('http://freesound.org/data/previews/105/105228_420640-lq.mp3');
 
-
 function preGame() {
 	if (localStorage.getItem('AB Toy Story Games') !== null) {
 		LSData = JSON.parse(localStorage.getItem('AB Toy Story Games'));
@@ -44,13 +43,18 @@ function preGame() {
 }
 
 function setCurrentPlayer() {
-	const playerNameFields = document.querySelectorAll('.player_name');
-	for (const playerName of playerNameFields) {
-		playerName.innerHTML = currentPlayer.name;
-	}
-	const playerAvatars = document.querySelectorAll('.player_avatar');
-	for (const playerAvatar of playerAvatars) {
-		playerAvatar.src = `images/avatar/${currentPlayer.avatar}.png`;
+
+	if (currentPlayer !== undefined) {
+		const playerNameFields = document.querySelectorAll('.player_name');
+		for (const playerName of playerNameFields) {
+			playerName.innerHTML = currentPlayer.name;
+			document.querySelector('.player_current').id = `player${currentPlayer.id}`;
+		}
+		const playerAvatars = document.querySelectorAll('.player_avatar');
+		for (const playerAvatar of playerAvatars) {
+			playerAvatar.src = `images/avatar/${currentPlayer.avatar}.png`;
+			playerAvatar.alt = `Avatar de ${currentPlayer.name}`;
+		}
 	}
 }
 

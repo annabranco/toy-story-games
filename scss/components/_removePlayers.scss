@@ -1,0 +1,64 @@
+.remove-div {
+	position  : fixed;
+	top       : 30%;
+	left      : 50%;
+	transform : translate(-50%, 0);
+	box-sizing: border-box;
+	border    : 1px solid;
+	width     : 80vw;
+	background: lightgray;
+	padding   : 20px;
+}
+
+.remove-inner {
+	display        : flex;
+	align-items    : center;
+	justify-content: center;
+	background     : rgba(255, 255, 255, 0.56);
+	margin         : 0 -20px;
+	width          : 79.3vw;
+	padding        : 2px;
+
+	& .otherPlayer_avatar {
+		width: 60px;
+	}
+
+	& .otherPlayer_name {
+		margin-left: 60px;
+		font-size  : 2rem;
+		color      : black;
+		text-shadow: none;
+	}
+}
+
+.remove_warning-title {
+	font-size: 2rem;
+	margin   : 0 0 20px;
+	color    : #9d1a1a;
+}
+
+.remove_warning-txt {}
+
+.remove_input {
+	margin    : 30px auto;
+	display   : block;
+	height    : 40px;
+	width     : 60%;
+	font-size : 1rem;
+	text-align: center;
+}
+
+.remove_button {
+	font-size: 1rem;
+	margin   : 10px 30px;
+	padding  : 5px 20px;
+	width    : auto;
+}
+
+.remove_button-delete {
+	background: #f66c6c;
+}
+
+.remove_button-cancel {
+	background: #85d589;
+}

@@ -179,7 +179,7 @@ body {
 }
 
 .otherPlayer_name,.player_name {
-  margin: 10px 40px;
+  margin: 10px 40px 10px 30px;
   color: #d5d417;
   text-shadow: 0 0 5px black;
   letter-spacing: 2px;
@@ -201,9 +201,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -234,7 +234,7 @@ body {
 }
 
 .player_remove-icon {
-  margin: 0 10px 0 100px;
+  margin: 0 10px 0 15px;
   color: white;
   text-shadow: 0 0 5px black;
 }
@@ -409,6 +409,77 @@ body {
   font-size: 0.9rem;
   font-style: italic;
   color: #931e1e;
+}
+
+.remove-div {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 80vw;
+  background: lightgray;
+  padding: 20px;
+}
+
+.remove-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.56);
+  margin: 0 -20px;
+  width: 79.3vw;
+  padding: 2px;
+}
+
+.remove-inner .otherPlayer_avatar {
+  width: 60px;
+}
+
+.remove-inner .otherPlayer_name {
+  margin-left: 60px;
+  font-size: 2rem;
+  color: black;
+  text-shadow: none;
+}
+
+.remove_warning-title {
+  font-size: 2rem;
+  margin: 0 0 20px;
+  color: #9d1a1a;
+}
+
+.remove_input {
+  margin: 30px auto;
+  display: block;
+  height: 40px;
+  width: 60%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.remove_button {
+  font-size: 1rem;
+  margin: 10px 30px;
+  padding: 5px 20px;
+  width: auto;
+}
+
+.remove_button-delete {
+  background: #f66c6c;
+}
+
+.remove_button-cancel {
+  background: #85d589;
 }
 
 .hidden {

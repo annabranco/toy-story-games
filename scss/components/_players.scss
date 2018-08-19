@@ -46,7 +46,7 @@
 
 .otherPlayer_name,
 .player_name {
-	margin        : 10px 40px;
+	margin        : 10px 40px 10px 30px;
 	color         : #d5d417;
 	text-shadow   : 0 0 5px rgb(0, 0, 0);
 	letter-spacing: 2px;
@@ -64,7 +64,7 @@
 .players {
 	display        : flex;
 	align-items    : center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	width          : 100%;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .player_remove-icon {
-	margin     : 0 10px 0 100px;
+	margin     : 0 10px 0 15px;
 	color      : white;
 	text-shadow: 0 0 5px rgb(0, 0, 0);
 }
