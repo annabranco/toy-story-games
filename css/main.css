@@ -527,6 +527,7 @@ body {
 }
 
 .remove-div {
+  z-index: 2;
   position: fixed;
   top: 30%;
   left: 50%;
@@ -544,6 +545,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -552,19 +557,21 @@ body {
   justify-content: center;
   background: rgba(255, 255, 255, 0.56);
   margin: 0 -20px;
-  width: 79.3vw;
+  width: 79.5vw;
   padding: 2px;
 }
 
 .remove-inner .otherPlayer_avatar {
+  margin-top: 10px;
   width: 60px;
 }
 
 .remove-inner .otherPlayer_name {
-  margin-left: 60px;
+  margin: 0;
   font-size: 2rem;
   color: black;
   text-shadow: none;
+  text-align: center;
 }
 
 .remove_warning-title {
