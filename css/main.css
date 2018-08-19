@@ -640,7 +640,7 @@ body {
   margin: 4px 0;
   font-family: 'Eagle Lake', cursive;
   font-size: 0.8rem;
-  color: #d1d1d1;
+  color: rgba(32, 32, 32, 0.5);
 }
 
 .footer__anna--img {
