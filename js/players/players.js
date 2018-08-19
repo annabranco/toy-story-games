@@ -23,6 +23,10 @@ document.querySelector('.player_inner-new').addEventListener('click',createNewPl
 document.querySelector('.player_details').addEventListener('click',seePlayerDetails);
 document.querySelector('.player_change').addEventListener('click',changePlayer);
 
+document.querySelector('.close_details').addEventListener('click',unmountPlayerDetailsMobile);
+document.querySelector('.close_change').addEventListener('click',unmountEditPlayersMobile);
+
+
 function seePlayerDetails() { // Opens up player details screen
 	Click.volume = 0.3;
 	Click.play();
@@ -39,6 +43,11 @@ function seePlayerDetails() { // Opens up player details screen
 function unmountPlayerDetails(e){
 	e.currentTarget.classList.add('hidden');
 	e.currentTarget.removeEventListener('mouseleave',unmountPlayerDetails);
+}
+
+function unmountPlayerDetailsMobile(e){
+	e.currentTarget.parentElement.parentElement.classList.add('hidden');
+	e.currentTarget.parentElement.parentElement.removeEventListener('mouseleave',unmountPlayerDetails);
 }
 
 function changePlayer() {
@@ -105,6 +114,17 @@ function unmountEditPlayers(e) {
 	document.querySelector('.player_current').classList.add('hidden');
 	e.currentTarget.classList.add('hidden');
 	e.currentTarget.removeEventListener('mouseleave',unmountEditPlayers);
+	clearOtherPlayers();
+}
+
+function unmountEditPlayersMobile(e) {
+	if ( currentPlayer !== undefined) {
+		document.querySelector('.player_inner-new').classList.add('hidden');
+	}
+
+	document.querySelector('.player_current').classList.add('hidden');
+	e.currentTarget.parentElement.parentElement.classList.add('hidden');
+	e.currentTarget.parentElement.parentElement.removeEventListener('mouseleave',unmountEditPlayers);
 	clearOtherPlayers();
 }
 

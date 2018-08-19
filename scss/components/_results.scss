@@ -1,7 +1,7 @@
 .victory__outer {
 	z-index  : 2;
 	position : fixed;
-	bottom   : 10%;
+	bottom   : 30%;
 	left     : 50%;
 	transform: translate(-50%,0);
 	width    : 100vw;
@@ -9,10 +9,17 @@
 
 .victory__text {
 	font-family        : 'Crafty Girls', cursive;
-	font-size          : 6rem;
+	font-size          : 3rem;
 	color              : #fed831;
-	text-shadow        : 0 0 20px rgb(217, 217, 217);
-	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+	text-shadow        : 0 0 20px rgb(255, 255, 255);
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+
+	@media all and (min-width: 500px) {
+		font-size          : 6rem;
+		text-shadow        : 0 0 20px rgb(217, 217, 217);
+		-webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+	}
+
 }
 
 .ss {

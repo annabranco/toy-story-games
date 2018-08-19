@@ -98,7 +98,7 @@ function theEnd() {
 	setTimeout(() => {
 		Victory.play();
 
-		const victoryTexts = ['¡Has conseguido!', `¡Muy bien, ${currentPlayer.name}!`, '¡Enhorabuena!']
+		const victoryTexts = [`¡Muy bien, ${currentPlayer.name}!`,'¡Has conseguido!','¡Enhorabuena!'];
 		const victoryText = victoryTexts[Math.floor(Math.random()*3)];
 
 		const victoryOuter = document.createElement('div');
@@ -115,7 +115,7 @@ function theEnd() {
 	},1000);
 
 	setTimeout(() => {
-		document.querySelector('.victory__outer').remove();
+	//	document.querySelector('.victory__outer').remove();
 		document.querySelector('.selection_outer').classList.remove('hidden');
 	}, 5000);
 

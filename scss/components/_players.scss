@@ -283,3 +283,25 @@
 	font-style   : italic;
 	color        : rgb(147, 30, 30);
 }
+
+.closeOnMobile {
+	display: block;
+
+	@media all and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.close_details {
+	position : absolute;
+	right    : 20px;
+	font-size: 1.4rem;
+	color    : #8c1616;
+}
+
+.close_change {
+	margin-left: 20px;
+	font-size  : 1.4rem;
+	color      : #8c1616;
+
+}

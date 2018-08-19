@@ -509,6 +509,23 @@ body {
   color: #931e1e;
 }
 
+.closeOnMobile {
+  display: block;
+}
+
+.close_details {
+  position: absolute;
+  right: 20px;
+  font-size: 1.4rem;
+  color: #8c1616;
+}
+
+.close_change {
+  margin-left: 20px;
+  font-size: 1.4rem;
+  color: #8c1616;
+}
+
 .remove-div {
   position: fixed;
   top: 30%;
@@ -583,7 +600,7 @@ body {
 .victory__outer {
   z-index: 2;
   position: fixed;
-  bottom: 10%;
+  bottom: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
@@ -592,10 +609,10 @@ body {
 
 .victory__text {
   font-family: 'Crafty Girls', cursive;
-  font-size: 6rem;
+  font-size: 3rem;
   color: #fed831;
-  text-shadow: 0 0 20px #d9d9d9;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 20px white;
+  -webkit-text-stroke: 1px black;
 }
 
 .ss {
@@ -662,7 +679,7 @@ body {
   display: block;
   margin: 0 30px 30px 0;
   text-align: center;
-  color: #9c8628;
+  color: rgba(32, 32, 32, 0.6);
   font-size: 0.8rem;
 }
 
@@ -696,6 +713,12 @@ body {
     width: 160px;
   }
 
+  .victory__text {
+    font-size: 6rem;
+    text-shadow: 0 0 20px #d9d9d9;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  }
+
   .footer__outer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -711,6 +734,12 @@ body {
   .footer__inner {
     margin-bottom: 0;
     width: 33vw;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .closeOnMobile {
+    display: none;
   }
 }
 
