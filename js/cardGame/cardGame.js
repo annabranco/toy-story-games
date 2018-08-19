@@ -115,7 +115,7 @@ function theEnd() {
 	},1000);
 
 	setTimeout(() => {
-	//	document.querySelector('.victory__outer').remove();
+		document.querySelector('.victory__outer').remove();
 		document.querySelector('.selection_outer').classList.remove('hidden');
 	}, 5000);
 
