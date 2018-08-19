@@ -3,120 +3,120 @@
 		"id": 101,
 		"name": "Woody",
 		"pair": "1",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/woody_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/woody_a.png"
 	},
 	{
 		"id": 102,
 		"name": "Woody",
 		"pair": "1",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/woody_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/woody_b.png"
 	},
 	{
 		"id": 103,
 		"name": "Jessie",
 		"pair": "2",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/jessie_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/jessie_a.png"
 	},
 	{
 		"id": 104,
 		"name": "Jessie",
 		"pair": "2",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/jessie_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/jessie_b.png"
 	},
 	{
 		"id": 105,
 		"name": "Buzz",
 		"pair": "3",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/buzz_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/buzz_a.png"
 	},
 	{
 		"id": 106,
 		"name": "Buzz",
 		"pair": "3",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/buzz_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/buzz_b.png"
 	},
 	{
 		"id": 107,
 		"name": "Bullseye",
 		"pair": "4",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/bullseye_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/bullseye_a.png"
 	},
 	{
 		"id": 108,
 		"name": "Bullseye",
 		"pair": "4",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/bullseye_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/bullseye_b.png"
 	},
 	{
 		"id": 109,
 		"name": "Mr. Potato",
 		"pair": "5",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mr-potato_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/mr-potato_a.png"
 	},
 	{
 		"id": 110,
 		"name": "Mr. Potato",
 		"pair": "5",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mr-potato_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/mr-potato_b.png"
 	},
 	{
 		"id": 111,
 		"name": "Mrs. Potato",
 		"pair": "6",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mrs-potato_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/mrs-potato_a.png"
 	},
 	{
 		"id": 112,
 		"name": "Mrs. Potato",
 		"pair": "6",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/mrs-potato_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/mrs-potato_b.png"
 	},
 	{
 		"id": 113,
 		"name": "Barbie",
 		"pair": "7",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/barbie_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/barbie_a.png"
 	},
 	{
 		"id": 114,
 		"name": "Barbie",
 		"pair": "7",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/barbie_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/barbie_b.png"
 	},
 	{
 		"id": 115,
 		"name": "Rex",
 		"pair": "8",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/rex_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/rex_a.png"
 	},
 	{
 		"id": 116,
 		"name": "Rex",
 		"pair": "8",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/rex_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/rex_b.png"
 	},
 	{
 		"id": 117,
 		"name": "Hamm",
 		"pair": "9",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/hamm_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/hamm_a.png"
 	},
 	{
 		"id": 118,
 		"name": "Hamm",
 		"pair": "9",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/hamm_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/hamm_b.png"
 	},
 	{
 		"id": 119,
 		"name": "Slinky Dog",
 		"pair": "0",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/dog_a.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/dog_a.png"
 	},
 	{
 		"id": 120,
 		"name": "Slinky Dog",
 		"pair": "0",
-		"image": "https://raw.githubusercontent.com/annabranco/juego-de-cartas-adalab/master/images/dog_b.png"
+		"image": "https://raw.githubusercontent.com/annabranco/toy-story-games/master/images/cards/dog_b.png"
 	}
 ]
