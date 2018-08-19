@@ -7,6 +7,15 @@ body {
 	background-position  : left top;
 }
 
+.header_credits {
+	position : absolute;
+	top      : 0;
+	right    : 10px;
+	color    : #FED831;
+	font-size: 0.7rem;
+
+}
+
 .header__title {
 	margin-bottom : 70px;
 	font-family   : $title__name;

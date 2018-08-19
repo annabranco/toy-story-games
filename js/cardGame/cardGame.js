@@ -94,11 +94,30 @@ function theEnd() {
 	compareA = compareB = undefined;
 	cont = 0;
 	document.querySelector('.start_button').innerHTML = 'Nuevo partido';
-	document.querySelector('.selection_outer').classList.remove('hidden');
 
 	setTimeout(() => {
 		Victory.play();
+
+		const victoryTexts = ['¡Has conseguido!', `¡Muy bien, ${currentPlayer.name}!`, '¡Enhorabuena!']
+		const victoryText = victoryTexts[Math.floor(Math.random()*3)];
+
+		const victoryOuter = document.createElement('div');
+			victoryOuter.classList.add('victory__outer');
+
+		const victoryInner = document.createElement('h2');
+			victoryInner.classList.add('victory__text');
+			victoryInner.innerHTML = victoryText;
+
+		victoryOuter.appendChild(victoryInner);
+
+		document.querySelector('.card__seccion').appendChild(victoryOuter);
+
 	},1000);
+
+	setTimeout(() => {
+		document.querySelector('.victory__outer').remove();
+		document.querySelector('.selection_outer').classList.remove('hidden');
+	}, 5000);
 
 	for (const player of LSData) {
 		if(player.id === currentPlayer.id) {
