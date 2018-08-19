@@ -71,10 +71,12 @@ function addPlayer() {
 	} else {
 		if (localStorage.getItem('AB Toy Story Games') !== null) {
 			LSData = JSON.parse(localStorage.getItem('AB Toy Story Games'));
-			currentId = LSData.length; // TODO : change it
+			LSData[0].lastId++;
+			currentId = LSData[0].lastId; // TODO : change it
+
 		} else {
 			currentId = 1;
-			LSData.push({ currentPlayer: playerName, currentId: currentId  });
+			LSData.push({ currentPlayer: playerName, currentId: currentId, lastId: currentId });
 		}
 
 		const newPlayer = { ...newPlayerObject, id: currentId, name: playerName, avatar: playerAvatar };
@@ -298,7 +300,9 @@ function delPlayer(id) {
 				document.querySelector('.remove-div') ? document.querySelector('.remove-div').remove() : null;
 			}
 		}
-		preGame();
+		if ( currentPlayer === undefined ) {
+			preGame();
+		}
 		setCurrentPlayer();
 		clearOtherPlayers();
 		printOtherPlayers();

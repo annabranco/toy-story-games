@@ -16,6 +16,21 @@ let currentPlayer;
 let LSData = [];
 const NewGame = new Audio('http://freesound.org/data/previews/105/105228_420640-lq.mp3');
 
+
+
+window.addEventListener('keyup',(e) => {
+	if (e.key === '+') {
+		for (const player of LSData) {
+			if (LSData[0].currentId === player.id) {
+
+				player.games.total++;
+				localStorage.setItem('AB Toy Story Games',JSON.stringify(LSData));
+			}
+		}
+	}
+});
+
+
 function preGame() {
 	if (localStorage.getItem('AB Toy Story Games') !== null) {
 		LSData = JSON.parse(localStorage.getItem('AB Toy Story Games'));
@@ -97,16 +112,16 @@ function empezar() {
 		resultado +
 		'.json'
 	)
-	.then(function(respuesta) {
+		.then(function(respuesta) {
 		//me devuelve un objeto y lo pasamos a formato json
 
-		return respuesta.json();
-	})
-	.then(function(respuesta2) {
-		charactersResults = respuesta2;
-		shuffleCharacters();
-	}
-);
+			return respuesta.json();
+		})
+		.then(function(respuesta2) {
+			charactersResults = respuesta2;
+			shuffleCharacters();
+		}
+		);
 }
 
 // crea un orden aleatorio de los personagens antes de pintar las cartas
@@ -130,7 +145,7 @@ function createElements() {
 		//let pairNum = charactersShuffled[i].pair;
 
 		const contenedor = document.createElement('div');
-		contenedor.setAttribute('data-pair',pairNum)
+		contenedor.setAttribute('data-pair',pairNum);
 		contenedor.classList.add('card__div','card__not-matched');
 		const imagen = document.createElement('img');
 		imagen.classList.add('card__image','card--back');
